@@ -1,0 +1,22 @@
+<style>
+div{
+    background-color: rgb(54, 28, 197);
+    width: 100px;
+    height: 100px;
+    transition: 5s;
+}
+.maxwidth
+{
+    width: 1350px;
+}
+</style>
+
+<div id="box"></div>
+<button onclick="widthchange()">widthchange</button>
+<script>
+    var box=document.getElementById("box")
+    function widthchange()
+    {
+        box.setAttribute("class","maxwidth")
+    }
+</script>

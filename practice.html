@@ -1,0 +1,11 @@
+<input type="text" id="inputtext" onkeyup="inptext()">
+<h1 id="type"></h1>
+<script>
+    var inputtext=document.getElementById("inputtext")
+    var para=document.getElementById("type")
+    
+    function inptext()
+    {
+        para.textContent=inputtext.value
+    }
+</script>
