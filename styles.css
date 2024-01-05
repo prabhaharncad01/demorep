@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.topcontainer
+    nav{
+    background-color: black;
+    color: white;
+   
+}
+
+.topcontainer li,ul,h4{
+    display: inline-block;
+}
+.topcontainer h4{
+ margin: 10px;
+ font-size: 18px;
+}
+.topcontainer ul{
+    margin-left: 70%;
+}
+.topcontainer li{
+    padding-left: 10px;
+}
+.topcontainer ul a{
+    display: inline;
+}
+.topcontainer .fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 1px;
+    border-radius: 10px;
+  }
+  
+ .topcontainer  .fa:hover {
+      opacity: 0.7;
+  }
+.topcontainer .fa-twitter {
+    background: black;
+    color: white;
+  }
+.topcontainer  .fa-youtube {
+    background:black;
+    color: white;
+  }
+  
+.topcontainer  .fa-instagram {
+    background:black;
+    color: white;
+  }  
+
+
+.topmiddlecontainer
+    img{
+        width: 20%;
+        margin-left: 38%;
+      
+    }
+
+.menubar
+    * {
+  box-sizing: border-box;
+}
+
+
+.menubar body {
+  margin: 0;
+
+}
+
+.menubar.navbar { 
+  overflow: hidden;
+  background-color:white;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+}
+
+.menubar .navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menubar .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.menubar .dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.menubar .navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:gray;
+}
+
+.menubar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 85%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menubar .dropdown-content .header {
+  background:gray;
+  padding: 16px;
+  color: white;
+}
+
+.menubar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.menubar .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.menubar .column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.menubar .column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.menubar .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+.menubar   .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.bannerimg img{
+  width:100%;
+  height: 450px;
+}
+.productcollections{
+    text-align: center;
+    margin-top: 150px;
+
+}
+.productcollections h1{
+    font-size: 75px;
+    font-weight: 100;
+    color: #777;
+}
+
+.gallary{
+    border-color:black;
+    border-width: 2px;
+border-style: solid;
+display: inline-block;
+width: 220px;
+padding-bottom: 10px;
+padding:10px;
+margin: 10px;
+
+}
+.gallary img {
+    width: 220px;
+    
+}
+.gallary  .btn{
+   border-radius: 10%;
+  color: black;
+}
+
+.gallary:hover{
+    background-color: #777;
+    color: white;
+    transition: 2s;
+}
+
+  .backvdo1{position: absolute;
+    left: 0;
+    bottom: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+  align-items: center;
+align-content: center;}
+   .backvdo2{
+      position: absolute;
+    right: 0;
+    bottom: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+    }
+.gifimg{    background-color: #777;
+    height: 600px;
+    width: 100%;
+    margin-top: 200px;}
+ .leftimg{
+      font-size: 30px;
+      text-align: left;
+      color: white;
+      padding: 10px;
+      margin-left: 11%;
+      float: left;
+       padding-bottom: 20px;
+    }
+  .rightimg{
+      font-size: 30px;
+      text-align:right;
+      color: white;
+      padding: 10px;
+      margin-right: 11%;
+      float: right;
+     
+  }
+
+
+.poster img{
+  width: 100%;
+  height: 450px;
+  margin-top: 250px;
+}
+.poster h2{
+  margin: 0;
+  padding: 0;
+  font-size: 75px;
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 100%;
+  transform: translateY(100%);
+}
+.footercontainer
+ 
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+ 
+.footercontainer{ line-height: 1.5;
+font-family: 'Poppins', sans-serif;}
+
+.footercontainer.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.container.row{
+display: flex;
+text-wrap: wrap;
+}
+.container ul{
+  list-style: none;
+
+}
+ .footer{
+  background-color: black;
+  padding: 70px 0;
+
+}
+ .footer-col{
+width: 25%;
+padding: 0 15px;
+}
+ .footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4 ::before{
+  content: "";
+  position:absolute;
+  left:0 ;
+  bottom:-10px ;
+  background-color:grey;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col li ul:not(:last-child){
+margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+ .footer-col ul li a :hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col.sociallinks a{
+  display: inline-block;
+  height:40px ;
+  width:40px ;
+  background-color: rgb(255, 255,255,0.2);
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+ .footer-col.sociallinks a:hover{
+  color: #24262b;
+background-color: #ffffff;
+}
+@media(max-width:767px) {
+  .footer-col{
+    width: 25%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width:574px) {
+  .footer-col{
+    width: 100%;
+  }
+}
