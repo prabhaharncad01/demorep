@@ -59,7 +59,7 @@
     img{
         width: 20%;
         margin-left: 38%;
-      
+      display: inline-block;
     }
 
 .menubar
@@ -165,6 +165,29 @@
     width: 100%;
     height: auto;
   }
+}
+
+.searchbar
+
+input[type=text]{
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out ;
+margin-left: 32%;
+margin-bottom: 20px; 
+}
+
+.searchbar input[type=text]:focus {
+  width: 25%;
 }
 
 .bannerimg img{
