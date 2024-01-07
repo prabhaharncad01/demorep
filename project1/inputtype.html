@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To display the word typed in the inputbox</title>
+</head>
+<body>
+    <input type="text" id="type" onkeyup="typing()">
+    <h1 id="para"></h1>
+
+    <script>
+        var typed =document.getElementById("type")
+        var para =document.getElementById("para")
+
+   
+        function typing()
+        {
+            para.textContent=typed.value
+        }
+    </script>
+</body>
+</html>
