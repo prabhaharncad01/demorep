@@ -189,61 +189,30 @@ animation: slide 20s infinite;
     background: url("beast(2).png");
   }
 }
-.productcollections{
-  h2{
-    color: black;
-    font-size: 50px;
-    text-align: center;
-    padding: 50px;
-    
-  }
-  div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.productcollections h1{
+  position: relative;
+  font-size: 6em;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect:below 1px linear-gradient(transparent,#0008);
+  line-height: 0.7em;
+  outline: none;
+  animation: animate 5s linear infinite;
 }
+.productcollections .gallary {
+  
+
+}
+.gallary img p{
+  display: inline;
+  border: #777 solid 2px;
+  width: 220px;
+  
+}
+
 .gifimg{
   .backvdo1{position: absolute;
     left: 0;
@@ -1489,11 +1458,5 @@ h2 ,p{
       border-radius: 1rem;
   }
 }
-.slideshow{
-.slider{
-  width: 800px;
-  height: 400px;
-  background:url('');
 
-}
-}
+
