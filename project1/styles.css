@@ -73,3 +73,9 @@ text-align: center;
 color: aliceblue;
 background-color: #fd43fd;
 }
+.refimg img{
+  -webkit-box-reflect:right 0 linear-gradient(to right,#0000,#0009);
+  position: relative;
+  left: 800px;
+  bottom: 600px;
+}
