@@ -170,23 +170,23 @@ body {
 .slider{
 height: 800px;
 width: 400px;
-background: url("images/www.Beast perfumes.com.png");
+background: url("www.Beast perfumes.com.png");
 margin: 100px auto;
 animation: slide 20s infinite;
 
 }
 @keyframes slide {
   25%{
-    background: url("images/www.Beast perfumes.com.png");
+    background: url("beast(5).png");
   }
   50%{
-    background: url("images/www.Beast perfumes.com.png");
+    background: url("beast(4).png");
   }
   75%{
-    background: url("images/www.Beast perfumes.com.png");
+    background: url("beast(3).png");
   }
   100%{
-    background: url("images/www.Beast perfumes.com.png");
+    background: url("beast(2).png");
   }
 }
 .productcollections{
@@ -1488,4 +1488,12 @@ h2 ,p{
       border: 1px solid #eff0f2;
       border-radius: 1rem;
   }
+}
+.slideshow{
+.slider{
+  width: 800px;
+  height: 400px;
+  background:url('');
+
+}
 }
