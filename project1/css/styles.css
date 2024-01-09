@@ -202,15 +202,44 @@ animation: slide 20s infinite;
   outline: none;
   animation: animate 5s linear infinite;
 }
-.productcollections .gallary {
-  
-
-}
-.gallary img p{
-  display: inline;
+ .gallary {
   border: #777 solid 2px;
   width: 220px;
-  
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 50px;
+
+}
+.gallary img{
+  display: inline;
+  height: 220px;
+  width: 220px;
+  text-align: center;
+}
+
+.gallary .btn{
+  color: rosybrown;
+  height: 35px;
+  width: 135px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-style: oblique;
+}
+.gallary .btn:hover{
+  background-color:#777;
+  color: #c8e8e9;
+  transition: ease-in;
+}
+.productcollections{
+  text-align: center;
+  margin-top: 50px;
+ 
+}
+
+.productcollections h2{
+  font-size: 100px;
+  margin-bottom: 100px;
 }
 
 .gifimg{
