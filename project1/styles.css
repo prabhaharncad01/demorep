@@ -46,3 +46,30 @@ h2{
   outline: none;
   animation: animate 5s linear infinite;
 }
+
+.gallery{
+  width: 220px;
+  border: slategray solid 2px;
+  display: inline-block;
+margin: 20px;
+text-align: center;
+
+}
+
+.gallery img{
+  height: 220px;
+  width: 220px;
+}
+
+.gallery .btn{
+  height: 75px;
+  width: 120px;
+  background-color:#fd43fd;
+  color: black;
+  font-weight: bold;
+}
+
+.gallery.btn:hover{
+color: aliceblue;
+background-color: #fd43fd;
+}
