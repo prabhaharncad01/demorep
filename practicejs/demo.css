@@ -1,0 +1,54 @@
+h1 {
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+    position: relative;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.7em;
+    animation: animate 5s linear infinite;
+  bottom: 400px;
+  left: 410px;
+}
+
+@keyframes animate {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.parbox{
+    border: black 2px solid;
+    height: 500px;
+    width: 1250px;
+    position:relative;
+    background-color:#d9dfe0;
+    
+}
+form input, .btn{
+    position: relative;
+top: 100px;
+    left: 100px;
+    padding: 5px;
+}
+form{
+    border: black 2px solid;
+    height: 280px;
+    width: 30%;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    background-color:#00819d;
+    border-radius:10%;
+}
+
+ .btn{
+    height: 25px;
+    width: 100px;
+    color:white;
+    background-color: black;
+    border-radius: 20%;
+}
+ 
