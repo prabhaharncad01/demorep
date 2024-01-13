@@ -25,21 +25,51 @@
        
 
 // }
+// // }
+
+// // checkingnumber(prompt("enter operator"));
+
+
+// var box1=document.getElementById("num1")
+// var box2=document.getElementById("num2")
+// var output=document.getElementById("result")
+
+// function add(event) {
+//     // Prevent the default form submission behavior
+//     event.preventDefault();
+
+//     var box1value = Number(box1.value);
+//     var box2value = Number(box2.value);
+//     var total = box1value + box2value;
+//     output.textContent = total;
 // }
 
-// checkingnumber(prompt("enter operator"));
+// Show menu
 
+const showmenu = (toggleid, navid) => {
+    const toggle = document.getElementById(toggleid),
+        nav = document.getElementById(navid);
 
-var box1=document.getElementById("num1")
-var box2=document.getElementById("num2")
-var output=document.getElementById("result")
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    }
+};
 
-function add(event) {
-    // Prevent the default form submission behavior
-    event.preventDefault();
+showmenu('nav_toggle', 'nav_menu');
 
-    var box1value = Number(box1.value);
-    var box2value = Number(box2.value);
-    var total = box1value + box2value;
-    output.textContent = total;
+// active & remove active
+
+const navlink = document.querySelectorAll('.nav_link');
+navlink.forEach((n) => n.classList.remove('active'));
+
+function linkAction() {
+    navlink.forEach((n) => n.classList.remove('active'));
+    this.classList.add('active');
+
+    const navmenu= document.getElementById('nav_menu');
+    navmenu.classList.remove('show')
 }
+
+navlink.forEach((n) => n.addEventListener('click', linkAction));
