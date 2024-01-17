@@ -175,16 +175,16 @@
 <h2 class="section_title" data-aos="fade-down" >contact</h2>
 
 <div class="contact_container bd_grid">
-    <form action="#" class="contact_form">
-        <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250">
-        <input type="mail" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="350">
+    <form action="#" class="contact_form" onsubmit="sendemail() ; reset(); return false;" >
+        <input type="text" placeholder="Name" class="control_input" data-aos="fade-right" data-aos-delay="250" id="name">
+        <input type="email" placeholder="Email" class="control_input" data-aos="fade-right" data-aos-delay="350" id="email">
         <textarea name=""
-         id="" 
+         id="message" 
          cols="0" 
          rows="10" 
-         class="control_input" data-aos="fade-right" data-aos-delay="400">
+         class="control_input" data-aos="fade-right" data-aos-delay="400" >
         </textarea>
-        <input type="button" value="send" class="control_button button" data-aos="fade-right" data-aos-delay="450">
+        <input type="submit" value="send" class="control_button button" data-aos="fade-right" data-aos-delay="450">
 
     </form>
 </div>
@@ -217,6 +217,25 @@
         duration: 1200,
         once: false
     });
+  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendemail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "prabhaharncad01@gmail.com",
+    Password : "Password@123",
+    To : 'prabaharan094@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value +
+    "<br> Email: " + document.getElementById("email").value +
+    "<br> Message: " + document.getElementById("message").value
+
+}).then(
+  message => alert(" Message sent succesfully")
+);
+    }
   </script>
 </body>
 </html>
