@@ -168,7 +168,7 @@ body {
 .canvas_close a:hover {
   background: #bda87f;
   border-color: #bda87f;
-  color: #fff;
+  color: #ddd;
 }
 
 .offcanvas_menu_wrapper {
@@ -1066,7 +1066,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  color: #fff;
+  color: 	#00FFFF;
 }
 .main_menu nav > ul > li > a i {
   margin-left: 3px;
@@ -1230,7 +1230,7 @@ h6 {
   margin-right: 0;
 }
 .header_top_right .header_right_info > ul > li > a {
-  color: #fff;
+  color: 	#00FFFF;
   /* color: #000000; */
 }
 .header_top_right .header_right_info > ul > li:hover > a {
@@ -1278,7 +1278,7 @@ h6 {
 }
 
 .header_top_right .header_account > ul > li > a {
-  color: #fff;
+  color: 	#00FFFF;
   font-size: 13px;
 }
 

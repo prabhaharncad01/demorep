@@ -10,6 +10,8 @@
       $(".offcanvas_menu_wrapper,.off_canvars_overlay").removeClass("active");
     });
   
+
+
     //   off canvas menu
     var $offcanvasNav = $(".offcanvas_main_menu"),
       $offcanvasNavSubMenu = $offcanvasNav.find(".sub-menu");
@@ -53,12 +55,18 @@
       }
     });
   
+
+
+
     //   search box slidetoggle activation
     $(".search_box > a").on("click", function () {
       $(this).toggleClass("active");
       $(".search_widget").slideToggle("medium");
     });
   
+
+
+
     // slide toggle activation of mini cart
     $(".mini_cart_wrapper > a").on("click", function () {
       if ($(window).width() < 991) {
@@ -66,6 +74,9 @@
       }
     });
   
+
+
+
     // sticky header
   
     $(window).on("scroll", function () {
@@ -90,6 +101,9 @@
       dataBackgroundImage();
     });
   
+
+
+
     // slider activation
     $(".slider_area").owlCarousel({
       animateOut: "fadeOut",
@@ -106,6 +120,10 @@
       ],
     });
   
+
+
+
+
     // product column of 4 activation
     $(".product_column4")
       .on("changed.owl.carousel initialized.owl.carousel", function (event) {
@@ -144,6 +162,10 @@
         },
       });
   
+
+
+
+
     // tooltip activation
   
     $(".action_links ul li a,.add_to_cart a,.footer_social_link ul li a").tooltip(
@@ -154,6 +176,10 @@
       }
     );
   
+
+
+
+
     // activation of one column of deal product
     $(".product_column1")
       .on("changed.owl.carousel initialized.owl.carousel", function (event) {
@@ -189,6 +215,10 @@
         },
       });
   
+
+
+
+
     // countdown activation
     $("[data-countdown").each(function () {
       var $this = $(this),
@@ -202,6 +232,10 @@
       });
     });
   
+
+
+
+
     // activation of one column of Best seller product
     $(".sidebar_product_column1")
       .on("changed.owl.carousel initialized.owl.carousel", function (event) {
@@ -238,6 +272,10 @@
         },
       });
   
+
+
+
+
     // Testimonial activation
     $(".testimonial_sidebar_carousel").owlCarousel({
       autoplay: true,
@@ -253,6 +291,9 @@
       ],
     });
   
+
+
+
     // activation of one column of Best seller product
     $(".product_column3")
       .on("changed.owl.carousel initialized.owl.carousel", function (event) {
@@ -291,6 +332,10 @@
         },
       });
   
+
+
+
+
     // activation of blog section
     $(".blog_column3").owlCarousel({
       autoplay: true,
@@ -318,6 +363,10 @@
       },
     });
   
+
+
+
+
     // Small product column 1 activation
     $(".small_product_column1")
       .on("changed.owl.carousel initialized.owl.carousel", function (event) {
@@ -354,6 +403,10 @@
         },
       });
   
+
+
+
+      
     // activation of small nav active
     $(".product_navactive").owlCarousel({
       autoplay: false,
