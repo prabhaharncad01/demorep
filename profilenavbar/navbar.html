@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Beast Perfumes</title>
     <style>
         *{
@@ -135,6 +137,77 @@ nav ul li a{
 }
 
 
+.search_widget {
+  position: absolute;
+  right: 0;
+  top: 36px;
+  z-index: 99;
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .search_widget {
+    left: -68px;
+    right: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .search_widget {
+    left: -68px;
+    right: auto;
+  }
+}
+.search_widget form {
+  position: relative;
+  width: 400px;
+  border: 1px solid #ebebeb;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .search_widget form {
+    width: 225px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .search_widget form {
+    width: 225px;
+  }
+}
+
+.search_widget form input {
+  padding: 10px 40px 10px 15px;
+  height: 41px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+  border: none;
+  width: 100%;
+  background: #f7f7f7;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .search_widget form input {
+    padding: 8px 40px 8px 15px;
+    height: 38px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .search_widget form input {
+    padding: 8px 40px 8px 15px;
+    height: 38px;
+  }
+}
+.search_widget form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  border: 0;
+  background: none;
+  font-size: 16px;
+}
+.search_widget form button:hover {
+  color: #f6692a;
+}
+
 
 
 
@@ -154,6 +227,16 @@ nav ul li a{
         <li><a href="#">Unisex</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
+        
+ <li class="search_box">
+    <a href="javascript:void(0)"><i class='bx bx-search-alt-2'></i></a>
+    <div class="search_widget">
+        <form action="#">
+            <input type="text" placeholder="Search Your Perfume">
+            <button type="submit"><i class='bx bx-search-alt-2'></i></button>
+        </form>
+    </div>
+</li>
     </ul>
     <img src="images/user.png" class="user-pic" onclick="toggleMenu()">
     <div class="sub-menu-wrap" id="subMenu">
@@ -196,6 +279,17 @@ nav ul li a{
         {
             subMenu.classList.toggle("open-menu");
         }
+
+
+
+            //   search box slidetoggle activation
+    $(".search_box > a").on("click", function () {
+      $(this).toggleClass("active");
+      $(".search_widget").slideToggle("medium");
+    });
+  
+
+
     </script>
 </body>
 </html>
