@@ -29,7 +29,11 @@ fetch('product.json')
 .then(data =>{
     products = data;
     addDatatohtml();
+   
 })
+
+
+
 
 //show datas in list html
 
@@ -47,7 +51,7 @@ function addDatatohtml(){
             ` <img src="${product.image}">
             <h2>${product.name}</h2>
             <div class="price">$ ${product.price}</div>
-            <button onclick="addcart(${product.id})>Add To Cart</button>`;
+            <button onclick="addcart(${product.id})">Add To Cart</button>`;
             listproducthtml.appendChild(newproduct);
         });
     }
@@ -98,7 +102,7 @@ function addcarttohtml(){
 
     let totalhtml = document.querySelector('.totalquantity');
 
-    let totalquantity = 0;
+    let toalquantity = 0;
     if(listcart){
         listcart.forEach(product => {
             if(product){
@@ -121,7 +125,10 @@ function addcarttohtml(){
                     <button>+</button>
                 </div>`;
                 listcarthtml.appendChild(newcart);
+                toalquantity = toalquantity + product.quantity;
             }
         })
     }
+    totalhtml.innerHTML = toalquantity;
 }
+
