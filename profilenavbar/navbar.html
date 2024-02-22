@@ -13,7 +13,13 @@
             font-family: 'poppins', sans-serif;
             box-sizing: border-box;
         }
-.hero{
+.beast{
+    width: 100%;
+    min-height: 100vh;
+    background: #eceaff;
+    color: #525252;
+}
+.beast-sub{
     width: 100%;
     min-height: 100vh;
     background: #eceaff;
@@ -31,6 +37,7 @@ nav{
 
 .logo{
     width: 100px;
+
 }
 
 .user-pic{
@@ -42,7 +49,7 @@ nav{
 
 nav ul{
     width: 100%;
-    text-align: right;
+    text-align: left;
 }
 
 nav ul li{
@@ -136,87 +143,43 @@ nav ul li a{
     font-weight: 600;
 }
 
-
-.search_widget {
-  position: absolute;
-  right: 0;
-  top: 36px;
-  z-index: 99;
-  display: none;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .search_widget {
-    left: -68px;
-    right: auto;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .search_widget {
-    left: -68px;
-    right: auto;
-  }
-}
-.search_widget form {
-  position: relative;
-  width: 400px;
-  border: 1px solid #ebebeb;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .search_widget form {
-    width: 225px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .search_widget form {
-    width: 225px;
-  }
+#searchbar {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
 }
 
-.search_widget form input {
-  padding: 10px 40px 10px 15px;
-  height: 41px;
-  line-height: 30px;
-  font-size: 12px;
-  color: #000;
-  border: none;
-  width: 100%;
-  background: #f7f7f7;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .search_widget form input {
-    padding: 8px 40px 8px 15px;
-    height: 38px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .search_widget form input {
-    padding: 8px 40px 8px 15px;
-    height: 38px;
-  }
-}
-.search_widget form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100%;
-  border: 0;
-  background: none;
-  font-size: 16px;
-}
-.search_widget form button:hover {
-  color: #f6692a;
+.bx-search{
+    color: #fff;
+    cursor: pointer;
+   height: fit-content;
+   width: 30px;
+   border-right:#e5e5e5;
 }
 
 
+.iconcart img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    display: inline-block;
+  
+}
 
+.iconcart .totalquantity{
+    position: relative;
+    z-index: 2;
+}
 
 
 
     </style>
 </head>
 <body>
-    <div class="hero">
+   <header>
+    <div class="beast">
 <nav>
     <img src="images/beast perfumes (1).png" class="logo">
     <ul>
@@ -227,16 +190,16 @@ nav ul li a{
         <li><a href="#">Unisex</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        
- <li class="search_box">
-    <a href="javascript:void(0)"><i class='bx bx-search-alt-2'></i></a>
-    <div class="search_widget">
-        <form action="#">
-            <input type="text" placeholder="Search Your Perfume">
-            <button type="submit"><i class='bx bx-search-alt-2'></i></button>
-        </form>
-    </div>
-</li>
+
+        <input id="searchbar"
+        onkeyup="search_animal()"
+        type="text" name="search"
+        placeholder="Search items.."><i class='bx bx-search'></i>
+        <div class="iconcart">
+            <img src="cart.jpg" alt="">
+            <div class="totalquantity">0</div>
+        </div>
+
     </ul>
     <img src="images/user.png" class="user-pic" onclick="toggleMenu()">
     <div class="sub-menu-wrap" id="subMenu">
@@ -271,7 +234,16 @@ nav ul li a{
         </div>
     </div>
 </nav>
+</header>
     </div>
+
+   
+ 
+
+
+
+
+
     <script>
         let subMenu = document.getElementById("subMenu");
 
@@ -282,12 +254,7 @@ nav ul li a{
 
 
 
-            //   search box slidetoggle activation
-    $(".search_box > a").on("click", function () {
-      $(this).toggleClass("active");
-      $(".search_widget").slideToggle("medium");
-    });
-  
+    
 
 
     </script>
