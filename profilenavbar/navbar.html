@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Beast Perfumes</title>
     <style>
         *{
@@ -13,12 +17,13 @@
             font-family: 'poppins', sans-serif;
             box-sizing: border-box;
         }
-.beast{
+/* .beast{
     width: 100%;
-    min-height: 100vh;
+    min-height: 500px;
     background: #eceaff;
     color: #525252;
-}
+    background: url(https://i.postimg.cc/tT3dwwW7/menslider2.jpg);
+} */
 .beast-sub{
     width: 100%;
     min-height: 100vh;
@@ -50,6 +55,10 @@ nav{
 nav ul{
     width: 100%;
     text-align: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li{
@@ -63,6 +72,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:hover{
+    color: blue;
+}
+
 .sub-menu-wrap{
     position: absolute;
     top: 100%;
@@ -71,10 +84,12 @@ nav ul li a{
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
+    z-index: 5;
 }
 
 .sub-menu-wrap.open-menu{
     max-height: 400px;
+    z-index: 5;
 }
 
 
@@ -84,21 +99,25 @@ nav ul li a{
     background: #fff;
     padding: 20px;
     margin: 10px;
+    z-index: 5;
 }
 
 .user-info{
     display: flex;
     align-items: center;
+    z-index: 5;
 }
 
 .user-info h3{
     font-weight: 500;
+    z-index: 5;
 }
 
 .user-info  img{
     width: 60px;
     border-radius: 50%;
     margin-right: 15px;
+    z-index: 5;
 }
 
 .sub-menu hr{
@@ -107,6 +126,7 @@ nav ul li a{
     width: 100%;
     background: #ccc;
     margin: 15px 0 10px;
+    z-index: 5;
 }
 
 .sub-menu-link{
@@ -115,11 +135,12 @@ nav ul li a{
     text-decoration: none;
     color: #525252;
     margin: 12px 0;
+    z-index: 5;
 }
 
 .sub-menu-link  p{
     width: 100%;
-
+    z-index: 5;
 }
 
 .sub-menu-link img{
@@ -128,19 +149,23 @@ nav ul li a{
     border-radius: 50%;
     padding: 8px;
     margin-right: 15px;
+    z-index: 5;
 }
 
 .sub-menu-link  span{
     font-size: 22px;
     transition: transform 0.5s;
+    z-index: 5;
 }
 
 .sub-menu-link:hover span{
      transform: translateX(5px);
+     z-index: 5;
 }
 
 .sub-menu-link:hover p{
     font-weight: 600;
+    z-index: 5;
 }
 
 #searchbar {
@@ -160,24 +185,52 @@ nav ul li a{
 }
 
 
-.iconcart img{
-    height: 30px;
-    width: 30px;
+.iconcart .bx-cart-alt{
+
     position: absolute;
     display: inline-block;
+   
   
 }
+
+
+
+.bx-cart-alt{
+ 
+    padding: 8px;
+    display: inline-flex;
+    color: #fff;
+   
+}
+
+.bx{
+    width: 20px;
+}
+
 
 .iconcart .totalquantity{
     position: relative;
     z-index: 2;
+    display: inline-flex;
+    color: red;
+    
+}
+.swiper {
+  width: 1350px;
+  height: 850px;
 }
 
-
+.swiper-slide img{
+    width: 1350px;
+    height: 100%;
+}
 
     </style>
 </head>
 <body>
+
+    <!-- header section starts  -->
+
    <header>
     <div class="beast">
 <nav>
@@ -196,7 +249,7 @@ nav ul li a{
         type="text" name="search"
         placeholder="Search items.."><i class='bx bx-search'></i>
         <div class="iconcart">
-            <img src="cart.jpg" alt="">
+            <i class='bx bx-cart-alt'></i>
             <div class="totalquantity">0</div>
         </div>
 
@@ -235,6 +288,51 @@ nav ul li a{
     </div>
 </nav>
 </header>
+    <!-- header section ends  -->
+
+
+
+
+    
+    <!-- slider section starts  -->
+   
+ 
+ 
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="https://i.postimg.cc/GhF0zm41/slider1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/9ffvWPJW/slider2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/zG2xFsFr/womensslider3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/tT3dwwW7/menslider2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="https://i.postimg.cc/jSBz5thL/kidsslider2.jpg" alt=""></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+    
+    <!-- slider section ends  -->
+
+
+
+
+
+
+
+
+
+
     </div>
 
    
@@ -242,7 +340,7 @@ nav ul li a{
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         let subMenu = document.getElementById("subMenu");
@@ -253,10 +351,42 @@ nav ul li a{
         }
 
 
+//swiper section
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 2000, // Delay between transitions in milliseconds
+    disableOnInteraction: false // Stop autoplay on interaction
+  },
+  slidesPerView: 1, // Number of slides per view
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  }
+});
+
+
 
     
 
 
     </script>
+   
 </body>
 </html>

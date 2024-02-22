@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.site-nav').toggleClass('site-nav--open');
+                $(this).toggleClass('open');
+            })
+        })
+    </script>
+<style>
+    body{
+    background: #F0F8EA;
+    font-family: sans-serif;
+}
+.container{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background: #E54B4B;
+    color: #f8f4f4;
+    padding: 1em 0;
+    position: relative;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    float: left;
+    font-size: 1.65em;
+    margin: 0;
+    font-weight: 700;
+}
+.logo ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.logo a{
+    color: #f8f4f4;
+    text-decoration: none;
+}
+.logo a:hover,
+.logo a:focus{
+    color: #464655;
+}
+.navbar-nav{
+    outline: none;
+    float: right;
+}
+.navbar-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar-nav a{
+    color: #f8f4f4;
+    text-decoration: none;
+    font-size: 130%;
+    right: .75em;
+}
+.navbar-nav a:hover,
+.navbar-nav a:focus{
+    color: #464655;
+}
+
+.site-nav{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background: #464655;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+    /* display: none; */
+}
+.site-nav--open{
+    clip-path: circle(100%);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: #f8f4f4;
+    display: block;
+    padding: 1.5em 4.5em;    
+    text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: #E4B363;
+    color: #464655;
+}
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 0.7em;
+    text-align: right;
+    color: rgba(255,255,255,.4);
+}
+.menu-toggle{
+    padding: 1em;
+    position: absolute;
+    top: .75em;
+    right: .75em;
+    cursor: pointer;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: #f8f4f4;
+    height: 3px;
+    width: 1.95em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-7px);
+}
+.hamburger::after{
+    transform: translateY(4px);
+}
+.open .hamburger{
+    transform: rotate(45deg);
+}
+.open .hamburger::before{
+    opacity: 0;
+}
+.open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+@media (min-width: 1077px){
+    .menu-toggle{
+        display: none;
+    }
+    .site-nav{
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        clip-path: initial;
+    }
+    .site-nav li{
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a{
+        padding: 0;
+        margin-left: 1.2em;
+        font-size: 1.15em;
+        padding-top: 7px;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus{
+        background: transparent;
+    }
+    .site-nav li .fa{
+        display: none;   
+    }
+}
+
+
+.content-section{
+    background: #f8f4f4;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    color: #131212;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(15, 15, 15);
+    font-weight: bold;
+  }
+  div.form-group{
+    margin-top: -24px;
+  }
+  .btn{
+    background: rgb(41, 159, 180);
+  }
+  h5{
+      color: #ffff;
+  }
+  h6{
+     color: #ffff; 
+  }
+  .register{
+    background: #dbd7d7;
+  }
+
+
+html, body{
+    position: relative;
+    height: 100%;
+}
+body{
+    background: #eee;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #eee;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color:#000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+.swiper-pagination-bullet-active{
+    color: #000;
+    background: #007aff;
+}
+</style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="logo">
+            <ul>
+                <li><a href="#">SakaHapa</a></li>
+            </ul>
+        </div>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-home site-nav--icon"></i>HOME</a></li>
+                <li><a href="#"><i class="fa fa-question-circle-o site-nav--icon"></i>HOW IT WORKS</a></li>
+                <li><a href="#"><i class="fa fa-user-circle site-nav--icon"></i>PROFILE</a></li>
+                <li><a href="#"><i class="fa fa-cart-plus site-nav--icon"></i>PURCHASES</a></li>
+                <li><a href="#"><i class="fa fa-eye site-nav--icon"></i>POPULAR</a></li>
+                <li><a href="#"><i class="fa fa-envelope site-nav--icon"></i>CONTACT</a></li>
+                <li><a href="#"><i class="fa fa-power-off site-nav--icon"></i>Log Out</a></li>
+            </ul> 
+        </nav>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </div>
+    </header>
+
+
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-text">
+                        <h2>Slide man</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic 
+                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the 
+                            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-text">
+                        <h2>Mafans</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable 
+                            content of a page when looking at its layout. The point of using Lorem Ipsum is 
+                            that it has a more-or-less normal distribution of letters, as opposed to using 
+                            'Content here, content here', making it look like readable English. Many desktop 
+                            publishing packages and web page editors now use Lorem Ipsum as their default 
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in 
+                            their infancy. Various versions have evolved over the years, sometimes by accident, 
+                            sometimes on purpose.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            </div> 
+
+            <script type="text/javascript" src="swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        renderBullet: function (index, className) {
+                            return '<span class="' + className + '">' + (index + 1) + '</span>';
+                        },
+                    },
+                });
+            </script>
+
+    </div>
+
+</body>
+</html>
