@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagegallery</title>
+    <style>
+        *{
+            
+          @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap")
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            background: #e7f2fd;
+        }
+
+        .container{
+            position: relative;
+            max-width: 1350px;
+            width: 100%;
+            margin: 50px auto;
+           
+            padding:20px;
+
+        }
+.filter-button{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+
+button.active{
+    background: #4070f4;
+    color: #fff;
+}
+
+
+.filterable-cards{
+    display: flex;
+    margin-top: 25px;
+    gap:20px;
+    flex-wrap: wrap;
+
+}
+.card{
+    /* flex-shrink:300px; */
+    width: 350px;
+    background-color: #FFF;
+    /* padding: px; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+}
+.card.hide{
+    display: none;
+}
+
+.card img{
+    width: 350px;
+height: 350px;
+object-fit:cover;
+border-radius: 8px 8px 0 0;
+}
+
+.card-body{
+padding: 15px 20px 20px ;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card-text{
+    font-size: 18px;
+    
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- filter buttons -->
+
+        <div class="filter-button">
+            <button class="active" data-name="all">Show all</button>
+            <button data-name="mens">Men's</button>
+            <button data-name="womens">Women's</button>
+            <button data-name="kids">Kids's</button>
+            <button data-name="womens">Unisex</button>
+        </div>
+
+<!-- images cards -->
+
+<div class="filterable-cards">
+    <div class="card" data-name="mens">
+        <img src="images/products/Men/1-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">men's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="mens">
+        <img src="images/products/Men/2-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">men's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="mens">
+        <img src="images/products/Men/3-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">men's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="mens">
+        <img src="images/products/Men/4-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">men's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="mens">
+        <img src="images/products/Men/5-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">men's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="mens">
+        <img src="images/products/Men/6-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">men's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="womens">
+        <img src="images/products/Women/1-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Women's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="womens">
+        <img src="images/products/Women/2-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Women's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="womens">
+        <img src="images/products/Women/3-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Women's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="womens">
+        <img src="images/products/Women/4-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Women's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="womens">
+        <img src="images/products/Women/5-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Women's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="womens">
+        <img src="images/products/Women/6-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Women's perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="unisex">
+        <img src="images/products/Unisex/1-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Unisex perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="unisex">
+        <img src="images/products/Unisex/2-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Unisex perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="unisex">
+        <img src="images/products/Unisex/3-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Unisex perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="unisex">
+        <img src="images/products/Unisex/4-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Unisex perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="unisex">
+        <img src="images/products/Unisex/5-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Unisex perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+    <div class="card" data-name="unisex">
+        <img src="images/products/Unisex/6-1.png" alt="">
+        <div class="card-body">
+            <h6 class="card-title">Unisex perfume</h6>
+            <p class="card-text">$50</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+
+
+    <script>
+
+//select all filter buttons and filterable cards
+
+const filterbutton = document.querySelectorAll(".filter-button button");
+const filterablecards = document.querySelectorAll(".filterable-cards .card");
+
+//defining the filter cards function
+
+const filtercards = e =>{
+document.querySelector(".active").classList.remove("active");
+e.target.classList.add("active");
+  
+//iterate over each filterable cards
+
+filterablecards.forEach(card => {
+
+    //add hide class to hide the cards intially
+    card.classList.add("hide");
+
+    //Check if the card is selected or all is selected
+
+    if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all")
+    {
+        card.classList.remove("hide");
+    }
+});
+
+
+};
+
+
+
+
+
+
+
+
+
+//add click event listener to each filter button
+
+filterbutton.forEach(button =>  button.addEventListener("click",filtercards));
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -9,6 +9,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<!-- <link rel="stylesheet" href="cart.css"> -->
     <title>Beast Perfumes</title>
     <style>
         *{
@@ -221,7 +222,7 @@ nav ul li a:hover{
 }
 
 .swiper-slide img{
-    width: 1350px;
+    width: 100%;
     height: 100%;
 }
 
@@ -319,24 +320,32 @@ nav ul li a:hover{
   
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
-  </div>
-    </section>
-    
-    <!-- slider section ends  -->
-
-
-
-
-
-
-
-
-
-
-    </div>
-
+</div>
+ </div>
+<!-- slider section ends  -->
    
  
+
+
+<!-- product section starts -->
+
+<section>
+    <div class="product-gallery">
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,7 +367,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 2000, // Delay between transitions in milliseconds
+    delay: 3000, // Delay between transitions in milliseconds
     disableOnInteraction: false // Stop autoplay on interaction
   },
   slidesPerView: 1, // Number of slides per view
