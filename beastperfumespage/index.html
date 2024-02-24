@@ -18,10 +18,9 @@
               box-sizing: border-box;
               font-family: 'poppins', sans-serif;
           }
-          .header{
-            width: 100%;
-          }
-
+         body{
+            background-color: #51e2f5;
+         }
           nav{
     background:#4070f4;
     width: 100%;
@@ -78,6 +77,10 @@ nav ul li a:hover{
     color: red;
 }
 
+
+
+
+
 .sub-menu-wrap{
     position: absolute;
     top: 100%;
@@ -115,6 +118,38 @@ nav ul li a:hover{
     z-index: 5;
 }
 
+.user-info >.signin,.signup{
+    display: inline-block;
+    text-wrap: wrap;
+}
+
+.signin{
+    margin: 10px;
+    padding: 10px;
+    border: #fff 1px solid;
+    box-shadow: #e5e5e5;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.signup{
+    margin: 10px;
+    padding: 10px;
+    border: #fff 1px solid;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+.signup:hover{
+ background-color: #51e2f5;
+ color: #4070f4;
+ transform: translateX(5px);
+}
+
+.signin:hover{
+    background-color: #51e2f5;
+ color: #4070f4;
+ transform: translateX(5px);
+}
 .user-info  img{
     width: 60px;
     border-radius: 50%;
@@ -367,6 +402,13 @@ margin-bottom: 100px;
 
 
 .gifimg{
+
+        background-color: #a0d2eb;
+    height: 600px;
+    width: 100%;
+    margin-top: 200px;
+    
+    
   .backvdo1{position: absolute;
     left: 0;
     bottom: auto;
@@ -381,25 +423,24 @@ align-content: center;}
     margin-top: 50px;
     margin-right: 50px;
     }
-    background-color: #777;
-    height: 600px;
-    width: 100%;
-    margin-top: 200px;
+   
     .leftimg{
       font-size: 30px;
       text-align: left;
       color: white;
       padding: 10px;
+
       margin-left: 11%;
       float: left;
-       padding-bottom: 20px;
+       
     }
     .rightimg{
+      
       font-size: 30px;
       text-align:right;
       color: white;
       padding: 10px;
-      margin-right: 11%;
+      margin-right: 6%;
       float: right;
      
   }
@@ -445,9 +486,11 @@ align-content: center;}
         <div class="sub-menu">
             <div class="user-info">
                 <img src="images/user.png">
-                <h3>prabhaharn</h3>
+                <h3>user</h3>
+            
                
             </div>
+            <button class="signin">signIn</button>/ <button class="signup">signUp</button>
             <hr>
             <a href="#" class="sub-menu-link">
                 <img src="images/profile.png">
@@ -466,7 +509,7 @@ align-content: center;}
             </a>
             <a href="#" class="sub-menu-link">
                 <img src="images/logout.png">
-                <p>Logout</p>
+                <p>LogIn</p>
                 <span>></span>
             </a>
         
@@ -548,7 +591,7 @@ align-content: center;}
        <img src="images/products/Men/2-1.png" alt="">
        <div class="card-body">
            <h6 class="card-title">men's perfume</h6>
-           <p class="card-text">$50</p>
+           <p class="card-text">$65</p>
        </div>
    </div>
    <div class="card" data-name="mens">
