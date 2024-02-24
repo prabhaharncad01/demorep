@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast perfumes</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+ li,.logo,ul,.searchbar{
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    margin-left: 10%;
+}
+
+.searchbar{
+    display: inline;
+}
+
+#searchbar{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+ 
+  display: inline-block;
+
+}
+
+.bx-search{
+    color: #fff;
+    cursor: pointer;
+   height: fit-content;
+   width: 10px;
+   border-right:#e5e5e5;
+   margin-top: 10px;
+   margin-bottom: 10px;
+    padding: 5px;
+   display: inline-block;
+ font-size: 25px;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h1 class="logo">Beast Perfumes</h1>
+            <ul>
+            <li><a href="#">Home |</a></li>
+            <li><a href="#">About Us |</a></li>
+            <li><a href="#">Contact Us |</a></li>
+
+            
+       
+            
+        </ul>
+        <div class="searchbar">
+            <input id="searchbar"
+            onkeyup="search_animal()"
+            type="text" name="search"
+            placeholder="Search items.."><i class='bx bx-search'></i>
+             </div>
+        </nav>
+    </div>
+</body>
+</html>
