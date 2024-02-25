@@ -455,70 +455,71 @@ align-content: center;}
 </style>
 </head>
 <body>
-    
-    <!-- header section starts  -->
+     
+ <!-- header section starts  -->
   
-   <header class="header">
+ <header class="header">
    
-<nav>
-    <h1 class="logo">Beast Perfume </h1>
-    <ul>
-    
-        <li><a href="#">Home</a></li>
-      
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-
-        <div class="searchbar">
-        <input id="searchbar"
-        onkeyup="search_animal()"
-        type="text" name="search"
-        placeholder="Search items.."><i class='bx bx-search'></i>
-         </div>
-         <div class="iconcart">
-            <i class='bx bx-cart-alt'></i>
-            <div class="totalquantity">0</div>
-        </div>
-
-
-    <img src="images/user.png" class="user-pic" onclick="toggleMenu()">
-    <div class="sub-menu-wrap" id="subMenu">
-        <div class="sub-menu">
-            <div class="user-info">
-                <img src="images/user.png">
-                <h3>user</h3>
-            
-               
-            </div>
-            <button class="signin">signIn</button>/ <button class="signup">signUp</button>
-            <hr>
-            <a href="#" class="sub-menu-link">
-                <img src="images/profile.png">
-                <p>Edit Profile</p>
-                <span>></span>
-            </a>
-            <a href="#" class="sub-menu-link">
-                <img src="images/setting.png">
-                <p>settings</p>
-                <span>></span>
-            </a>
-            <a href="#" class="sub-menu-link">
-                <img src="images/help.png">
-                <p>Help & Support</p>
-                <span>></span>
-            </a>
-            <a href="#" class="sub-menu-link">
-                <img src="images/logout.png">
-                <p>LogIn</p>
-                <span>></span>
-            </a>
+    <nav>
+        <h1 class="logo">Beast Perfume </h1>
+        <ul>
         
+            <li><a href="#">Home</a></li>
+          
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+    
+            <div class="searchbar">
+            <input id="searchbar"
+            onkeyup="search_animal()"
+            type="text" name="search"
+            placeholder="Search items.."><i class='bx bx-search'></i>
+             </div>
+             <div class="iconcart">
+                <i class='bx bx-cart-alt'></i>
+                <div class="totalquantity">0</div>
+            </div>
+    
+    <form action="">
+        <img src="images/user.png" class="user-pic" onclick="toggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/user.png">
+                    <h3 id="user"></h3>
+                
+                   
+                </div>
+                <button class="signin"><a href="signin.html">SignIn</a></button>/ <button class="signup"><a href="signup.html">SignUp</a></button>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="images/profile.png">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="images/setting.png">
+                    <p>settings</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="signin.html" class="sub-menu-link">
+                    <img src="images/logout.png">
+                    <p>LogIn</p>
+                    <span>></span>
+                </a>
+            
+            </div>
         </div>
-    </div>
-</ul>
-</nav>
-</header>
-    <!-- header section ends  -->
+    </form>
+    </ul>
+    </nav>
+    </header>
+        <!-- header section ends  -->
 
 
 
@@ -728,12 +729,16 @@ align-content: center;}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        let subMenu = document.getElementById("subMenu");
+         let subMenu = document.getElementById("subMenu");
 
-        function toggleMenu()
-        {
-            subMenu.classList.toggle("open-menu");
-        }
+function toggleMenu()
+{
+    subMenu.classList.toggle("open-menu");
+}
+
+
+document.getElementById("user").innerHTML=localStorage.getItem("username")
+
 
 
 //swiper section
