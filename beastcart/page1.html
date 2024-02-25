@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page1</title>
+    <script>
+function result() {
+    var textval= document.getElementById("txt").value;
+    localStorage.setItem("passval",textval);
+}
+    </script>
+</head>
+<body>
+    <form action="page2.html">
+        <input type="text" id="txt">
+        <button onclick="result()">click</button>
+    </form>
+</body>
+</html>
