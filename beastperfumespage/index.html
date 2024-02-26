@@ -486,7 +486,7 @@ align-content: center;}
             <div class="sub-menu">
                 <div class="user-info">
                     <img src="images/user.png">
-                    <h3 id="user"></h3>
+                    <h3 id="user">prabhaharn</h3>
                 
                    
                 </div>
@@ -507,9 +507,9 @@ align-content: center;}
                     <p>Help & Support</p>
                     <span>></span>
                 </a>
-                <a href="signin.html" class="sub-menu-link">
+                <a href="signin.html" class="sub-menu-link" onclick="logout()">
                     <img src="images/logout.png">
-                    <p>LogIn</p>
+                    <p id="log">logout</p>
                     <span>></span>
                 </a>
             
@@ -737,7 +737,27 @@ function toggleMenu()
 }
 
 
-document.getElementById("user").innerHTML=localStorage.getItem("username")
+
+
+
+
+
+
+    // var dummyname = document.getElementById("user");
+    // var login = document.getElementById("log");
+
+    // if (login.textContent === 'logout') {
+    //     // If user is logged in, clear username and change button text to "login"
+    //     dummyname.textContent = "user_name";
+    //     login.textContent = 'login';
+    //     // Clear username from localStorage
+    //     localStorage.removeItem("username");
+    // } else {
+    //     // If user is logged out, retrieve username from localStorage
+    //     var storedname = localStorage.getItem("username");
+     
+    // }
+
 
 
 
