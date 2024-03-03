@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group  input{
+            border-radius: 5px;
+        }
+        form{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" class="bg-primary p-4 border border-primary w-50 p-3 m-5" id="addForm">
+        <h1 class="text-center text-bg-light p-3 text-danger text-uppercase fs-1 fw-bold">Student Form</h1>
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input placeholder="Enter name" id="name" class=" p-2 ">
+        </div>
+        <div class="input-group">
+            <label for="age">Age</label>
+            <input placeholder="Enter age" id="age" class=" p-2">
+        </div>
+        <div class="input-group-gender">
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male" class="mt-4 p-2"> Male
+            <input type="radio" name="gender" id="female" value="female" class=" p-2"> Female
+        </div>
+        <div class="input-group">
+            <label for="course">Course</label>
+            <input placeholder="Enter course name" id="course" class=" p-2">
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input placeholder="Enter Emailid" id="email" class=" p-2">
+        </div>
+        <div class="input-group">
+        <button type="button" onclick="add()" class="mt-4 p-2 bg-dark text-primary fs-4">Send</button>
+    </div>
+    </form>
+
+    <h2>Student List</h2>
+    <table border="1px solid black">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="resultlist"></tbody>
+    </table>
+
+    <script>
+        function add() {
+            var td = document.getElementById("resultlist");
+
+            var listitem = document.createElement("tr");
+
+            var usrname = document.getElementById("name").value;
+            var getage = document.getElementById("age").value;
+            var getcourse = document.getElementById("course").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var getemail = document.getElementById("email").value;
+
+            listitem.innerHTML = 
+                "<td id='tname'>" + usrname + "</td>" +
+                "<td id='tage'>" + getage + "</td>" +
+                "<td id='tgender'>" + (gender ? gender.value : "") + "</td>" +
+                "<td id='tcourse'>" + getcourse + "</td>" +
+                "<td id='temail'>" + getemail + "</td>" +
+                "<td><button onclick='deletelist(event)'>Delete</button></td>";
+
+            td.appendChild(listitem);
+        }
+
+        function deletelist(event) {
+            var rowToDelete = event.target.closest("tr");
+            rowToDelete.remove();
+        }
+    </script>
+</body>
+</html>
