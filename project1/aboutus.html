@@ -1,0 +1,87 @@
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactcontainer{
+    margin: 20vh;
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.rightside{
+    float: right;
+    flex-wrap: wrap;
+}
+
+
+.leftside{
+    float: left;
+}
+
+.inputgroup{
+    display:flex;
+   
+}
+
+
+
+.
+.form{
+    display: flex;
+}
+
+
+</style>
+
+<div class="contactcontainer">
+    <form action="" class="form">
+
+    <div class="leftside">
+        <h1>Contactus</h1>
+        <div class="name">
+            <h3>Name :</h3>
+            <h4>prabhaharn</h4>
+        </div>
+       
+        <div class="phonenumber">
+            <h3>Phone Number :</h3>
+            <h4>9043792705</h4>
+        </div>
+       
+        <div class="address">
+            <h3>Address :</h3>
+            <h4>Ariyamangalam, Trichy</h4>
+        </div>
+       
+    </div>
+    
+    <div class="rightside">
+        <div class="inputgroup">
+            <div class="inputname">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+    </div>
+<div class="inputphone">
+        <label for="phone">PhoneNumber</label>
+        <input type="text" id="phone" name="Phone">
+    </div>
+    <div class="message">
+        <label for="name">Message Me</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="message me....."></textarea>
+    </div>
+        <button onclick="send() " id="send" >Send</button>
+        
+
+
+        
+    </div>
+    </div>
+</form>
+    
+</div>
+
