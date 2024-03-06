@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">Checkout</h1>
+    <div class="card mt-4">
+      <div class="card-body">
+        <h5 class="card-title">Order Summary</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="shoe1.jpg" alt="Shoe 1" style="max-width: 100px;"></td>
+              <td>Running Shoes</td>
+              <td>$50</td>
+              <td>1</td>
+              <td>$50</td>
+            </tr>
+            <tr>
+              <td><img src="shoe2.jpg" alt="Shoe 2" style="max-width: 100px;"></td>
+              <td>Training Shoes</td>
+              <td>$60</td>
+              <td>1</td>
+              <td>$60</td>
+            </tr>
+            <!-- Add more rows for additional products -->
+          </tbody>
+        </table>
+        <h5 class="mt-4">Total: <span id="total"> $110</span></h5>
+        <button class="btn btn-primary mt-3" onclick="completePurchase()">Complete Purchase</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function completePurchase() {
+      // Add your logic to complete the purchase
+      alert('Thank you for your purchase!');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <!-- Bootstrap CSS -->
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Slider -->
+<div class="container mt-4">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://wallpapercave.com/wp/wp4020945.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://wallpapercave.com/wp/wp6451946.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://wallpapercave.com/wp/wp9637128.jpg" alt="Third slide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</div>
+
+<!-- Latest Products -->
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Latest Products</h2>
+  <div class="row">
+    <!-- Product Items -->
+    <!-- Repeat this block for each product -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top" src="product1.jpg" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text">$50</p>
+          <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Product Items -->
+  </div>
+</div>
+
+<!-- Hot Deal Products -->
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Hot Deal Products</h2>
+  <div class="row">
+    <!-- Product Items -->
+    <!-- Repeat this block for each product -->
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top" src="product2.jpg" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Product 2</h5>
+          <p class="card-text">$60</p>
+          <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Product Items -->
+  </div>
+</div>
+
+<!-- About Us -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan hendrerit purus, ut gravida risus dignissim non. Duis convallis velit et justo feugiat, id efficitur lacus suscipit.</p>
+      <p>Donec vulputate metus et nulla finibus, quis hendrerit nulla tristique. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi rutrum interdum justo, ut finibus nisi.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="about.jpg" class="img-fluid" alt="About Image">
+    </div>
+  </div>
+</div>
+
+<!-- Contact Us -->
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Contact Number: +123456789</p>
+      <p>Address: 123, Street Name, City, Country</p>
+    </div>
+    <div class="col-md-6 text-center">
+      <a href="#"><i class="fab fa-facebook fa-2x mx-2"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x mx-2"></i></a>
+    </div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      
+    </body>
+    </html>
