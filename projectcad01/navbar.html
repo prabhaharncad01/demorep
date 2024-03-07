@@ -3,11 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
+  <title>Responsive Navbar with Search Bar</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .cart-wishlist {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      padding: 20px;
+
+      font-size: 25px;
+    }
+    .cart-wishlist a {
+      margin-left: 10px;
+      position: relative;
+      color: #fff;
+    }
+    .cart-badge {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+    }
+  </style>
 </head>
 <body>
 
@@ -16,10 +37,16 @@
     <a class="navbar-brand" href="#">
       <img src="logo.png" alt="Logo" class="logo img-fluid">
     </a>
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    <!-- Responsive Search Bar -->
+    <form class="form-inline my-2 my-lg-0 mr-auto d-lg-flex justify-content-center">
+      <input class="form-control mr-sm-2 w-100 w-lg-40" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <!-- End Responsive Search Bar -->
+    <div class="cart-wishlist">
+      <a href="#"><i class="fas fa-shopping-cart"></i><span class="badge badge-primary cart-badge">0</span></a>
+      <a href="#"><i class="fas fa-heart"></i></a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,6 +85,21 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Update cart count function
+  function updateCartCount(count) {
+    document.querySelector('.cart-badge').textContent = count;
+  }
+
+  // Example: Update cart count when adding item to cart
+  var cartCount = 0;
+  document.querySelector('.cart-wishlist a[href="#"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    cartCount++;
+    updateCartCount(cartCount);
+  });
+</script>
 
 </body>
 </html>
