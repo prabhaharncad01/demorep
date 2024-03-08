@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation Bar with Logo</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .navbar-logo {
+    display: block;
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: auto;
+    margin-right: 20px;
+  }
+  .navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .navbar a:hover {
+    color: #ddd;
+  }
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  .social-icons a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  .social-icons a img {
+    width: 30px; /* Adjust the width of the social icons as needed */
+    height: auto;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar-logo {
+      display: none;
+    }
+    .navbar a, .social-icons a {
+      margin: 0 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img src="logo.png" alt="Logo" class="navbar-logo"> <!-- Replace "logo.png" with the path to your logo image -->
+  <a href="#home">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <div class="social-icons">
+    <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a> <!-- Replace "instagram-icon.png" with the path to your Instagram icon image -->
+    <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a> <!-- Replace "facebook-icon.png" with the path to your Facebook icon image -->
+    <a href="https://www.twitter.com"><img src="twitter-icon.png" alt="Twitter"></a> <!-- Replace "twitter-icon.png" with the path to your Twitter icon image -->
+  </div>
+</div>
+
+<!-- Replace the image sources with actual paths to your logo and social media icons -->
+
+</body>
+</html>
