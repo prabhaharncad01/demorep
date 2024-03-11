@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examplecart</title>
+    <style>
+    .item{
+        border: 1px solid blue;
+        display: inline-block;
+        border-radius: 2px;
+        box-shadow: 0 10px 50px blue;
+    }
+
+        .item img{
+            height: 220px;
+            width: 250px;
+        }
+        .item h2 ,.price{
+            text-align: center;
+          
+        }
+
+       .pro-btn {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+            padding: 5px;
+            width: 80%;
+        }
+
+        
+ .item .pro-btn{
+
+
+    background-color: #1c9aee;
+    color: #fff;
+    width: 50%;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 10px 50px #000;
+    cursor: pointer;
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+}
+.item:hover .pro-btn{
+    transition:  0.5s;
+    opacity: 1;
+    transform: translateX(50%) translateY(0);
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="listProduct">
+
+        <div class="item">
+            <img src="new-product/N1-1.png" alt="">
+            <h2>perfume1</h2>
+            <div class="price">$50</div>
+            <button class="pro-btn">Add To Cart</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
