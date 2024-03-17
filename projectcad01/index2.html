@@ -20,33 +20,40 @@
 
 <!-- Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark text-bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
    <h1 class="text-uppercase fw-bold text-primary">beastperfumes</h1>
       </a>
-      <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+     
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
+       
+        <li class="nav-item">
+          <a class="nav-link text-primary mx-3" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary mx-3" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary mx-3" href="#">About</a>
+        </li>
+       
+        <header class="cartimg">
+          <div class="iconCart">
+              <img src="cart.jpg">
+              <div class="totalQuantity">0</div>
+          </div>
+      </header>
+  
+         
           <li class="nav-item">
             <button class="btn btn-primary mr-2"> <a href="signup.html" style="color: white;">Sign Up</a></button>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ms-3">
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Profile
@@ -62,6 +69,18 @@
       </div>
     </div>
   </nav>
+
+
+
+
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+
+
+
 
 
 
@@ -106,26 +125,10 @@
     </button>
   </div>
 
-<!-- Latest Products -->
-<div class="container mt-4">
-  <h2 class="text-center mb-4">Latest Products</h2>
-  <div class="row">
-    <!-- Product Items -->
-    <!-- Repeat this block for each product -->
-   
-    <!-- End Product Items -->
-  </div>
-</div>
 
 <!-- Hot Deal Products -->
-<div class="hd-container" style="margin-bottom: 50px;">
-    <header>
-        <h1>LATEST PRODUCT</h1>
-        <div class="iconCart">
-            <img src="cart.jpg">
-            <div class="totalQuantity">0</div>
-        </div>
-    </header>
+<div class="hd-container" style="margin: 50px;">
+    
 
     <div class="listProduct">
 
